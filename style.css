@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lobster', cursive;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(90deg,rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(Assets/BDAY.jpg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 60vh;
+}
+.text{
+    color:#FF00BF ;
+    font-size: 1.5rem;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 40vh;
+    color:#FF358F
+}
+.align{
+    display: flex;
+    flex-direction: column;
+}
+span{
+    color: #DDBBFF;
+}
+.days,.hours,.minutes,.seconds{
+    width: 5em;
+    padding-left: 1em;
+}
+.buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.buttons :nth-child(1){
+    background-color:#8EFFBA ;
+    font-size: 1rem;
+    padding: 0.2em 1.5em;
+    border-radius: 0.5em;
+}
+.buttons :nth-child(2){
+    background-color:#2058FF ;
+    font-size: 1rem;
+    padding: 0.2em 1.5em;
+    border-radius: 0.5em;
+}
+
+
+@media only screen and (min-width:600px){
+ main{
+    display:flex;
+    flex-direction: row;
+    
+ }
+ .align{
+    margin-left: 1em;
+ }
+
+}
