@@ -1,22 +1,33 @@
+
+
 let days = document.querySelector(".days");
 let hrs = document.querySelector(".hours");
 let mins = document.querySelector(".minutes");
 let secs = document.querySelector(".seconds");
-//let input = document.querySelector("#date");
-//let inp = input.value;
-//console.log(inp)
+let  input = document.querySelector("#date");
 
+
+let now = new Date();
+let todaysDate = now.getDate();
+let month = now.getMonth();
+let year = now.getFullYear();
+let currentDate = `${todaysDate}/${(month+1)}/${year}`;
 
 let timer = null;
 
-function countdown(){
-    let birthDate = new Date('25 December 2023 00:00:00');
-    let now = new Date();
-    let diff = (((((birthDate - now)/1000)/60)/60)/24);
+
+ function getValue(){
+   let inp = input.value;
+    function countdown(){ 
+    console.log(inp);
+    console.log(currentDate);
+    let diff = (((((inp - currentDate)/1000)/60)/60)/24);
+    //console.log(currentDate);
+    console.log(diff);
     days.value = Math.floor(diff + 1);
-    hrs.value = Math.floor((((((birthDate - now)/1000)/60)/60)%24) + 1);
-    mins.value = Math.floor(((((birthDate - now)/1000)/60)%60) + 1);
-    secs.value = Math.floor((((birthDate - now)/1000)%60) + 1);
+    hrs.value = Math.floor((((((inp - currentDate)/1000)/60)/60)%24) + 1);
+    mins.value = Math.floor(((((inp - currentDate)/1000)/60)%60) + 1);
+    secs.value = Math.floor((((inp - currentDate)/1000)%60) + 1);
 
   //concatinating "0" to the value if the value is less than 10
    if(hrs.value<10){
@@ -30,11 +41,12 @@ function countdown(){
    }
        
 }
- 
+countdown();
+ }
 
  let buttonStart = document.querySelector(".start");
  buttonStart.addEventListener("click",()=>{
-   timer = setInterval(countdown,1000);
+   timer = setInterval(getValue.countdown,1000);
  });
 
  let buttonReset = document.querySelector(".reset");
