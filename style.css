@@ -26,6 +26,12 @@ section{
     justify-content: space-between;
     height: 60vh;
 }
+label{
+    color: aquamarine;
+}
+#date{
+    padding-left: 20px;
+}
 .text{
     color:#FF00BF ;
     font-size: 1.5rem;
