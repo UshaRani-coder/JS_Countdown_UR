@@ -12,4 +12,4 @@ Info : Build a countdown app which takes the start position from the user and on
 ## Responsive design 🔥
 ### Responsive on all devices :iphone: :computer: :desktop_computer:
 
-🔥[Live link]( https://js-countdown-ur.vercel.app/)🔥
+🔥[Live link](https://js-countdown-ur-rouge.vercel.app/)🔥
