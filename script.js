@@ -71,5 +71,6 @@ let timer = null;
     hrs.value = "00";
     mins.value = "00";
     secs.value = "00";
+    birthDate.value = ""
   })
 })

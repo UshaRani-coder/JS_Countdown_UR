@@ -64,13 +64,16 @@ span{
     font-size: 1rem;
     padding: 0.2em 1.5em;
     border-radius: 0.5em;
+    cursor: pointer;
 }
 .buttons :nth-child(2){
     background-color:#2058FF ;
     font-size: 1rem;
     padding: 0.2em 1.5em;
     border-radius: 0.5em;
+    cursor: pointer;
 }
+
 
 
 @media only screen and (min-width:600px){
