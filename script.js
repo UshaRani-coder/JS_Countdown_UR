@@ -73,35 +73,4 @@ let timer = null;
     secs.value = "00";
     birthDate.value = ""
   })
-<<<<<<< HEAD
 })
-=======
-})
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
->>>>>>> dead3a279a322df23368b193d78e36a95ece9c83
